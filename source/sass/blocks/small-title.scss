@@ -1,0 +1,10 @@
+.small-title {
+  margin: 0;
+
+  @include montserrat();
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: -0.02em;
+  color: $accent_color;
+}

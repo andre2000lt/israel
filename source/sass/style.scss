@@ -1,3 +1,12 @@
-h1 {
-  color: red;
-}
+@import "variables.scss";
+@import "mixins.scss";
+@import "fonts.scss";
+@import "general.scss";
+@import "blocks/small-title.scss";
+@import "blocks/gradient-button.scss";
+@import "blocks/message-incorrect.scss";
+@import "blocks/container.scss";
+@import "blocks/header/header.scss";
+@import "blocks/header/header-top.scss";
+@import "blocks/popups/order-call.scss";
+@import "blocks/popups/accepted-window.scss";

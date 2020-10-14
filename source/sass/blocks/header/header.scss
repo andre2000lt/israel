@@ -1,0 +1,121 @@
+/* --- HEADER --- */
+
+.header {
+  position: relative;
+
+  min-height: 879px;
+  padding-top: 160px;
+
+  background: url("../img/header_bg_desktop_1x.png") no-repeat;
+  background-size: cover;
+
+  /* -- RETINA -- */
+  @media (min-resolution: $retina) {
+    background-image: url("../img/header_bg_desktop_2x.png");
+  }
+
+  /* -- MOBILE -- */
+  @media (max-width: $mobile_max_width) {
+    padding-top: 167px;
+
+    background-image: url("../img/header_bg_mobile_1x.png");
+    background-position: 0 32px;
+    background-size: 100% auto;
+
+    /* -- RETINA -- */
+    @media (min-resolution: $retina) {
+      background-image: url("../img/header_bg_mobile_2x.png");
+    }
+  }
+}
+
+.header__page-title-wrapper {
+  width: 74.524%;
+  max-width: 1018px;
+  height: 340px;
+  margin: 0 auto;
+
+  background: url("../img/israel_1x.png") no-repeat;
+  background-size: 100% auto;
+
+  /* -- RETINA -- */
+  @media (min-resolution: $retina) {
+    background-image: url("../img/israel_2x.png");
+  }
+
+  /* -- MOBILE -- */
+  @media (max-width: $mobile_max_width) {
+    width: 100%;
+
+    background-image: url("../img/israel_mobile_1x.png");
+
+    /* -- RETINA -- */
+    @media (min-resolution: $retina) {
+      background-image: url("../img/israel_mobile_2x.png");
+    }
+  }
+}
+
+.header__front-layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  min-height: 100%;
+
+  background: url("../img/photo_girl_1x.png") no-repeat 52% top;
+
+  /* -- RETINA -- */
+  @media (min-resolution: $retina) {
+    background-image: url("../img/photo_girl_1x.png");
+  }
+
+  /* -- MOBILE -- */
+  @media (max-width: $mobile_max_width) {
+    background-image: url("../img/photo_girl_mobile-1x.png");
+    background-size: 100% auto;
+    background-position: 52% 32px;
+
+    /* -- RETINA -- */
+    @media (min-resolution: $retina) {
+      background-image: url("../img/photo_girl_mobile_2x.png");
+    }
+  }
+}
+
+.header__slogan {
+  position: relative;
+
+  width: 345px;
+  padding-top: 538px;
+  margin: 0 auto;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: $text_color_light;
+
+  text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -164px;
+
+    width: 76px;
+    height: 132px;
+    background: url("../img/scroll.svg");
+  }
+
+  /* -- MOBILE -- */
+  @media (max-width: $mobile_max_width) {
+    width: 90%;
+    padding-top: 335px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

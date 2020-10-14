@@ -1,0 +1,19 @@
+/* -- CONTAINER -- */
+.container {
+  max-width: 100%;
+  padding: 0 $desktop_padding;
+  margin: 0 auto;
+
+  /* -- TABLET -- */
+  @media (max-width: $tablet_max_width) {
+    max-width: 100%;
+    padding: 0 $tablet_padding;
+  }
+
+  /* -- MOBILE -- */
+  @media (max-width: $mobile_max_width) {
+    max-width: 100%;
+    padding: 0 $mobile_padding;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,43 @@
+// Mixins
+
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-style: $style;
+    font-weight: $weight;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff2") format("woff2"),
+      url("../fonts/#{$file_name}.woff") format("woff");
+  }
+}
+
+@mixin general-font-family() {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  letter-spacing: normal;
+}
+
+@mixin general-font() {
+  @include general-font-family();
+  font-weight: 400;
+}
+
+@mixin general-font-family-bold() {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+}
+
+@mixin montserrat() {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+}
+
+@mixin focused-input() {
+  border: 2px solid transparent;
+  border-radius: 80px;
+  background-image: linear-gradient(white, white),
+    linear-gradient(108.42deg, #ffc341 20.46%, #ffd701 65.31%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  outline: none;
+}

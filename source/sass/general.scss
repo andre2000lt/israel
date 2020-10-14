@@ -1,0 +1,48 @@
+/* -- ОБЩИЕ -- */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  @include general-font-family();
+
+  background-color: $primary_bg_color;
+  position: relative;
+}
+
+.modal-opened {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  border: 0;
+}
+
+.nowrap-mobile {
+  /* -- MOBILE -- */
+  @media (max-width: $mobile_max_width) {
+    white-space: nowrap;
+  }
+}
